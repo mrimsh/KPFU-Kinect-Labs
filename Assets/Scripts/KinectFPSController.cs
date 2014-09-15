@@ -57,12 +57,21 @@ public class KinectFPSController : MonoBehaviour
 				}
 
 				// Set physical rotation
-				rigidbody.angularVelocity = new Vector3 (0f, rotationFactor * rotSpeed, 0f);
+				rigidbody.angularVelocity = Vector3.Lerp (rigidbody.angularVelocity, new Vector3 (0f, rotationFactor * rotSpeed, 0f), 10f * Time.fixedDeltaTime);
 
+				float fixedCamAngle = 20f;
 				// Rotate camera
-				float cameraRotFactor = -rightArmRotation.eulerAngles.x;
-				cameraRotFactor = Mathf.Clamp (cameraRotFactor, -35f, 0f);
-				cameraToMove.localRotation = Quaternion.Euler (cameraRotFactor, 0f, 0f);
+				float cameraRotFactor = rightArmRotation.eulerAngles.x;
+				
+				if (cameraRotFactor != 0) {
+
+						if (cameraRotFactor > fixedCamAngle && cameraRotFactor < 180f) {
+								cameraRotFactor = fixedCamAngle;
+						} else if (cameraRotFactor > 180f && cameraRotFactor < 360f - fixedCamAngle) {
+								cameraRotFactor = 360f - fixedCamAngle;
+						}
+						cameraToMove.localRotation = Quaternion.Lerp (cameraToMove.localRotation, Quaternion.Euler (-cameraRotFactor, 0f, 0f), Time.fixedDeltaTime);
+				}
 
 				float speedModifier = 0f;
 
@@ -72,7 +81,8 @@ public class KinectFPSController : MonoBehaviour
 				}
 				rigidbody.velocity = transform.forward * speed * speedModifier;
 
-				Debug.Log (rightArmRotation.eulerAngles.x + "; " + rigidbody.velocity);
+
+				Debug.Log (rightArmRotation.eulerAngles.x + "; " + cameraRotFactor);
 		}
 
 		/// <summary>
