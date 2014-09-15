@@ -4,13 +4,15 @@ using System.Collections;
 public class KinectFPSController : MonoBehaviour
 {
 		public SkeletonWrapper sw;
+		public float sensorPollTime = 0.2f;
 		public int player;
+		public Transform cameraToMove;
 		public float speed = 7f;
 		public float rotSpeed = 0.25f;
 		public float deadZoneAngles = 15f;
-		public float sensorPollTime = 0.2f;
-		public Vector3 rightArmVector;
-		private Quaternion rightArmRotation;
+		public float armLengthDeadZone = 0.15f;
+		public float maxArmLength = 0.4f;
+		private Vector3 rightArmVector;
 
 		/// <summary>
 		/// Couroutine that polls sensor for bones position every <paramref name="sensorPollTime"/> seconds. 
@@ -20,10 +22,7 @@ public class KinectFPSController : MonoBehaviour
 		IEnumerator SensorPollCouroutine ()
 		{
 				while (Application.isPlaying) {
-			
 						rightArmVector = PollSensorForVector (8, 11);
-						// Rotation from right shoulder to right hand.
-						rightArmRotation = Quaternion.FromToRotation (-Vector3.forward, rightArmVector);
 
 						yield return new WaitForSeconds (sensorPollTime);
 				}
@@ -38,19 +37,42 @@ public class KinectFPSController : MonoBehaviour
 		}
 	
 		// Update is called once per frame
-		void Update ()
+		void FixedUpdate ()
 		{
 				float rotationFactor = 0f;
-		
+
+				Quaternion rightArmRotation;
+
+				// Set rotation of arm
+				if (rightArmVector.sqrMagnitude < 0.05f) {
+						rightArmRotation = Quaternion.Euler (0f, 180f, 0f);
+				} else {
+						// Rotation from right shoulder to right hand.
+						rightArmRotation = Quaternion.FromToRotation (-Vector3.forward, rightArmVector);
+				}
+
+				// Set horizontal rotation. Turn the character!
 				if (Mathf.Abs (rightArmRotation.eulerAngles.y - 180f) > deadZoneAngles) {
 						rotationFactor = (rightArmRotation.eulerAngles.y - 180f);
 				}
-		
-				Debug.Log (rightArmRotation.eulerAngles + "; " + rotationFactor);
-		
-				rigidbody.velocity = transform.forward * speed;
 
+				// Set physical rotation
 				rigidbody.angularVelocity = new Vector3 (0f, rotationFactor * rotSpeed, 0f);
+
+				// Rotate camera
+				float cameraRotFactor = -rightArmRotation.eulerAngles.x;
+				cameraRotFactor = Mathf.Clamp (cameraRotFactor, -35f, 0f);
+				cameraToMove.localRotation = Quaternion.Euler (cameraRotFactor, 0f, 0f);
+
+				float speedModifier = 0f;
+
+				// Set speed multiplier based on arm length.
+				if (rightArmVector.sqrMagnitude > armLengthDeadZone * armLengthDeadZone) {
+						speedModifier = rightArmVector.sqrMagnitude / (maxArmLength * maxArmLength);
+				}
+				rigidbody.velocity = transform.forward * speed * speedModifier;
+
+				Debug.Log (rightArmRotation.eulerAngles.x + "; " + rigidbody.velocity);
 		}
 
 		/// <summary>
