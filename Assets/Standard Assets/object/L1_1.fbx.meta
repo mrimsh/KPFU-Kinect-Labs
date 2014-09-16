@@ -1,0 +1,469 @@
+fileFormatVersion: 2
+guid: efc118a53c983bc4ebd6839992018c0d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: L1_01
+    100002: L1_01.004
+    100004: L1_02
+    100006: L1_03
+    100008: L1_04
+    100010: L1_05
+    100012: L1_06
+    100014: L1_07
+    100016: L1_08
+    100018: //RootNode
+    100020: L1_ekran2
+    100022: L1_kabel
+    100024: L1_plakat
+    100026: L1_pribor
+    100028: L1_pribor.001
+    100030: L1_pribor_door
+    100032: L1_pribor_ecran
+    100034: L1_pribor_glass
+    100036: L1_wall
+    100038: L1_window
+    100040: L1_wall.001
+    100042: L1_wall.002
+    100044: Armature
+    100046: Armature|Bone
+    100048: Armature|Bone_door
+    100050: Armature|Bone_rot
+    100052: Camera
+    100054: Point
+    100056: L1_pribor_anim
+    100058: Cube
+    100060: L1_pribor.003
+    100062: L1_wall.003
+    100064: L1_pribor_lamp
+    400000: L1_01
+    400002: L1_01.004
+    400004: L1_02
+    400006: L1_03
+    400008: L1_04
+    400010: L1_05
+    400012: L1_06
+    400014: L1_07
+    400016: L1_08
+    400018: //RootNode
+    400020: L1_ekran2
+    400022: L1_kabel
+    400024: L1_plakat
+    400026: L1_pribor
+    400028: L1_pribor.001
+    400030: L1_pribor_door
+    400032: L1_pribor_ecran
+    400034: L1_pribor_glass
+    400036: L1_wall
+    400038: L1_window
+    400040: L1_wall.001
+    400042: L1_wall.002
+    400044: Armature
+    400046: Armature|Bone
+    400048: Armature|Bone_door
+    400050: Armature|Bone_rot
+    400052: Camera
+    400054: Point
+    400056: L1_pribor_anim
+    400058: Cube
+    400060: L1_pribor.003
+    400062: L1_wall.003
+    400064: L1_pribor_lamp
+    2300000: L1_01
+    2300002: L1_01.004
+    2300004: L1_02
+    2300006: L1_03
+    2300008: L1_04
+    2300010: L1_05
+    2300012: L1_06
+    2300014: L1_07
+    2300016: L1_08
+    2300018: L1_ekran2
+    2300020: L1_kabel
+    2300022: L1_plakat
+    2300024: L1_pribor
+    2300026: L1_pribor.001
+    2300028: L1_pribor_door
+    2300030: L1_pribor_ecran
+    2300032: L1_pribor_glass
+    2300034: L1_wall
+    2300036: L1_window
+    2300038: L1_wall.001
+    2300040: L1_wall.002
+    2300042: Cube
+    2300044: L1_wall.003
+    3300000: L1_01
+    3300002: L1_01.004
+    3300004: L1_02
+    3300006: L1_03
+    3300008: L1_04
+    3300010: L1_05
+    3300012: L1_06
+    3300014: L1_07
+    3300016: L1_08
+    3300018: L1_ekran2
+    3300020: L1_kabel
+    3300022: L1_plakat
+    3300024: L1_pribor
+    3300026: L1_pribor.001
+    3300028: L1_pribor_door
+    3300030: L1_pribor_ecran
+    3300032: L1_pribor_glass
+    3300034: L1_wall
+    3300036: L1_window
+    3300038: L1_wall.001
+    3300040: L1_wall.002
+    3300042: Cube
+    3300044: L1_wall.003
+    4300000: L1_wall.002
+    4300002: L1_wall.001
+    4300004: L1_wall
+    4300006: L1_01.004
+    4300008: L1_07
+    4300010: L1_08
+    4300012: L1_06
+    4300014: L1_window
+    4300016: L1_02
+    4300018: L1_ekran2
+    4300020: L1_05
+    4300022: L1_04
+    4300024: L1_03
+    4300026: L1_01
+    4300028: L1_pribor
+    4300030: L1_pribor_ecran
+    4300032: L1_pribor_door
+    4300034: L1_pribor_glass
+    4300036: L1_kabel
+    4300038: L1_pribor_anim
+    4300040: Cube
+    4300042: L1_pribor.003
+    4300044: L1_wall.003
+    4300046: L1_pribor_lamp
+    6400000: L1_01
+    6400002: L1_01.004
+    6400004: L1_02
+    6400006: L1_03
+    6400008: L1_04
+    6400010: L1_05
+    6400012: L1_06
+    6400014: L1_07
+    6400016: L1_08
+    6400018: L1_ekran2
+    6400020: L1_kabel
+    6400022: L1_plakat
+    6400024: L1_pribor
+    6400026: L1_pribor_ecran
+    6400028: L1_pribor_glass
+    6400030: L1_wall
+    6400032: L1_wall.002
+    6400034: L1_wall.003
+    6400036: L1_window
+    7400000: Armature|Clouse
+    7400002: Armature|Open
+    7400004: Armature|Rot
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: L1_pribor
+    13700002: L1_pribor_anim
+    13700004: L1_pribor.003
+    13700006: L1_pribor_lamp
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Clouse
+      takeName: Armature|Clouse
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Bone
+        weight: 1
+      - path: Armature/Armature|Bone_door
+        weight: 1
+      - path: Armature/Armature|Bone_rot
+        weight: 1
+      - path: Armature/L1_pribor
+        weight: 1
+      - path: Armature/L1_pribor/L1_pribor_glass
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: L1_plakat
+        weight: 1
+      - path: L1_pribor_anim
+        weight: 1
+      - path: L1_pribor_ecran
+        weight: 1
+      - path: L1_pribor_lamp
+        weight: 1
+      - path: L1_wall
+        weight: 1
+      - path: L1_wall/L1_01
+        weight: 1
+      - path: L1_wall/L1_01.004
+        weight: 1
+      - path: L1_wall/L1_02
+        weight: 1
+      - path: L1_wall/L1_02/L1_ekran2
+        weight: 1
+      - path: L1_wall/L1_03
+        weight: 1
+      - path: L1_wall/L1_04
+        weight: 1
+      - path: L1_wall/L1_05
+        weight: 1
+      - path: L1_wall/L1_06
+        weight: 1
+      - path: L1_wall/L1_07
+        weight: 1
+      - path: L1_wall/L1_08
+        weight: 1
+      - path: L1_wall/L1_kabel
+        weight: 1
+      - path: L1_wall/L1_window
+        weight: 1
+      - path: L1_wall.002
+        weight: 1
+      - path: L1_wall.003
+        weight: 1
+      - path: Point
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Open
+      takeName: Armature|Open
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Bone
+        weight: 1
+      - path: Armature/Armature|Bone_door
+        weight: 1
+      - path: Armature/Armature|Bone_rot
+        weight: 1
+      - path: Armature/L1_pribor
+        weight: 1
+      - path: Armature/L1_pribor/L1_pribor_glass
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: L1_plakat
+        weight: 1
+      - path: L1_pribor_anim
+        weight: 1
+      - path: L1_pribor_ecran
+        weight: 1
+      - path: L1_pribor_lamp
+        weight: 1
+      - path: L1_wall
+        weight: 1
+      - path: L1_wall/L1_01
+        weight: 1
+      - path: L1_wall/L1_01.004
+        weight: 1
+      - path: L1_wall/L1_02
+        weight: 1
+      - path: L1_wall/L1_02/L1_ekran2
+        weight: 1
+      - path: L1_wall/L1_03
+        weight: 1
+      - path: L1_wall/L1_04
+        weight: 1
+      - path: L1_wall/L1_05
+        weight: 1
+      - path: L1_wall/L1_06
+        weight: 1
+      - path: L1_wall/L1_07
+        weight: 1
+      - path: L1_wall/L1_08
+        weight: 1
+      - path: L1_wall/L1_kabel
+        weight: 1
+      - path: L1_wall/L1_window
+        weight: 1
+      - path: L1_wall.002
+        weight: 1
+      - path: L1_wall.003
+        weight: 1
+      - path: Point
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Rot
+      takeName: Armature|Rot
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Bone
+        weight: 1
+      - path: Armature/Armature|Bone_door
+        weight: 1
+      - path: Armature/Armature|Bone_rot
+        weight: 1
+      - path: Armature/L1_pribor
+        weight: 1
+      - path: Armature/L1_pribor/L1_pribor_glass
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: L1_plakat
+        weight: 1
+      - path: L1_pribor_anim
+        weight: 1
+      - path: L1_pribor_ecran
+        weight: 1
+      - path: L1_pribor_lamp
+        weight: 1
+      - path: L1_wall
+        weight: 1
+      - path: L1_wall/L1_01
+        weight: 1
+      - path: L1_wall/L1_01.004
+        weight: 1
+      - path: L1_wall/L1_02
+        weight: 1
+      - path: L1_wall/L1_02/L1_ekran2
+        weight: 1
+      - path: L1_wall/L1_03
+        weight: 1
+      - path: L1_wall/L1_04
+        weight: 1
+      - path: L1_wall/L1_05
+        weight: 1
+      - path: L1_wall/L1_06
+        weight: 1
+      - path: L1_wall/L1_07
+        weight: 1
+      - path: L1_wall/L1_08
+        weight: 1
+      - path: L1_wall/L1_kabel
+        weight: 1
+      - path: L1_wall/L1_window
+        weight: 1
+      - path: L1_wall.002
+        weight: 1
+      - path: L1_wall.003
+        weight: 1
+      - path: Point
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
