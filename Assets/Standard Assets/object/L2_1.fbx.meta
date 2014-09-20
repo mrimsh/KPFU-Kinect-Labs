@@ -1,0 +1,1203 @@
+fileFormatVersion: 2
+guid: 686e0422472c8f1428d92446ba110b8b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cube.022
+    100002: L2_01
+    100004: L2_01.001
+    100006: L2_01_glass
+    100008: L2_02
+    100010: L2_02.001
+    100012: L2_02.002
+    100014: L2_02.003
+    100016: L2_02.004
+    100018: L2_02.005
+    100020: L2_02.006
+    100022: L2_02.007
+    100024: L2_03
+    100026: L2_04
+    100028: L2_05
+    100030: L2_06
+    100032: L2_06.001
+    100034: L2_06.002
+    100036: L2_06.003
+    100038: L2_07
+    100040: L2_07.001
+    100042: L2_08
+    100044: L2_08_glass
+    100046: L2_09
+    100048: //RootNode
+    100050: L2_10
+    100052: L2_wall
+    100054: L2_wall_glass
+    100056: pr2
+    100058: pr2.001
+    100060: pr2_glass
+    100062: pr2_glass.001
+    100064: pr5
+    100066: pr_3.001
+    100068: pr_4
+    100070: pr_4.001
+    100072: pr_4.002
+    100074: pr_4_glass
+    100076: pr_4_glass.001
+    100078: L2_wall.001
+    100080: L2_07.002
+    100082: L2_wall.002
+    100084: L2_wall.005
+    100086: pr2_glass.002
+    100088: ecran_
+    100090: ecran_.001
+    100092: ecran_.002
+    100094: ecran_.003
+    100096: ecran_.004
+    100098: ecran_.005
+    100100: ecran_.006
+    100102: ecran_.007
+    100104: ecran_.008
+    100106: ecran_.009
+    100108: ecran_.010
+    100110: ecran_.011
+    100112: L2_floor
+    100114: L2_pr1
+    100116: L2_wall_gjal
+    100118: L2_wire
+    100120: L1_04
+    100122: L2_wall_other
+    100124: L2_colb
+    100126: Armature_pr2
+    100128: Armature_pr2|Bone
+    100130: L2_floor.001
+    100132: Armature_pr2.001
+    100134: Armature_pr2.001|Bone
+    100136: Armature_pr4
+    100138: Armature_pr4|Bone
+    100140: Armature_pr4|Bone.001
+    100142: Armature_pr4|Bone.002
+    100144: Armature_pr4|Bone.003
+    100146: Armature_pr4|Bone.004
+    100148: Armature_pr4|Bone.005
+    100150: Armature_pr4|Bone.006
+    100152: Point
+    100154: Point.001
+    100156: Point.002
+    100158: Point.003
+    100160: Point.004
+    100162: Point.005
+    100164: Point.006
+    100166: Point.007
+    100168: Point.008
+    100170: Point.009
+    100172: Point.010
+    100174: Point.011
+    100176: pr2_glass.000
+    100178: pr2_glass.003
+    100180: pr2_glass.004
+    100182: pr2_glass.005
+    100184: pr5.001
+    100186: pr5.002
+    100188: pr5.003
+    100190: pr5.004
+    100192: pr_4.003
+    100194: pr_4.004
+    100196: pr_4.005
+    100198: Text
+    100200: ecran_2
+    100202: L1_01.000
+    100204: L1_01.001
+    100206: L1_01.002
+    100208: L1_01.003
+    100210: L1_01.004
+    100212: L1_01.005
+    100214: L1_01.006
+    100216: L1_01.007
+    100218: L1_01.008
+    100220: L1_01.009
+    100222: L1_01.010
+    100224: L1_01.011
+    100226: L1_01.012
+    100228: L2_wall_other.000
+    100230: L2_wall_other.001
+    100232: L3_02
+    100234: L3_04.001
+    100236: L3_bat
+    100238: L3_covr
+    100240: L3_ground
+    100242: L3_st
+    100244: L3_trees
+    100246: L3_wall
+    100248: L3_wall.001
+    100250: L3_wall.002
+    100252: L3_wall.003
+    100254: L3_wall.004
+    100256: L3_wall_gjal
+    100258: L3_wall_gjal.001
+    100260: L3_window
+    100262: Plazma
+    400000: Cube.022
+    400002: L2_01
+    400004: L2_01.001
+    400006: L2_01_glass
+    400008: L2_02
+    400010: L2_02.001
+    400012: L2_02.002
+    400014: L2_02.003
+    400016: L2_02.004
+    400018: L2_02.005
+    400020: L2_02.006
+    400022: L2_02.007
+    400024: L2_03
+    400026: L2_04
+    400028: L2_05
+    400030: L2_06
+    400032: L2_06.001
+    400034: L2_06.002
+    400036: L2_06.003
+    400038: L2_07
+    400040: L2_07.001
+    400042: L2_08
+    400044: L2_08_glass
+    400046: L2_09
+    400048: //RootNode
+    400050: L2_10
+    400052: L2_wall
+    400054: L2_wall_glass
+    400056: pr2
+    400058: pr2.001
+    400060: pr2_glass
+    400062: pr2_glass.001
+    400064: pr5
+    400066: pr_3.001
+    400068: pr_4
+    400070: pr_4.001
+    400072: pr_4.002
+    400074: pr_4_glass
+    400076: pr_4_glass.001
+    400078: L2_wall.001
+    400080: L2_07.002
+    400082: L2_wall.002
+    400084: L2_wall.005
+    400086: pr2_glass.002
+    400088: ecran_
+    400090: ecran_.001
+    400092: ecran_.002
+    400094: ecran_.003
+    400096: ecran_.004
+    400098: ecran_.005
+    400100: ecran_.006
+    400102: ecran_.007
+    400104: ecran_.008
+    400106: ecran_.009
+    400108: ecran_.010
+    400110: ecran_.011
+    400112: L2_floor
+    400114: L2_pr1
+    400116: L2_wall_gjal
+    400118: L2_wire
+    400120: L1_04
+    400122: L2_wall_other
+    400124: L2_colb
+    400126: Armature_pr2
+    400128: Armature_pr2|Bone
+    400130: L2_floor.001
+    400132: Armature_pr2.001
+    400134: Armature_pr2.001|Bone
+    400136: Armature_pr4
+    400138: Armature_pr4|Bone
+    400140: Armature_pr4|Bone.001
+    400142: Armature_pr4|Bone.002
+    400144: Armature_pr4|Bone.003
+    400146: Armature_pr4|Bone.004
+    400148: Armature_pr4|Bone.005
+    400150: Armature_pr4|Bone.006
+    400152: Point
+    400154: Point.001
+    400156: Point.002
+    400158: Point.003
+    400160: Point.004
+    400162: Point.005
+    400164: Point.006
+    400166: Point.007
+    400168: Point.008
+    400170: Point.009
+    400172: Point.010
+    400174: Point.011
+    400176: pr2_glass.000
+    400178: pr2_glass.003
+    400180: pr2_glass.004
+    400182: pr2_glass.005
+    400184: pr5.001
+    400186: pr5.002
+    400188: pr5.003
+    400190: pr5.004
+    400192: pr_4.003
+    400194: pr_4.004
+    400196: pr_4.005
+    400198: Text
+    400200: ecran_2
+    400202: L1_01.000
+    400204: L1_01.001
+    400206: L1_01.002
+    400208: L1_01.003
+    400210: L1_01.004
+    400212: L1_01.005
+    400214: L1_01.006
+    400216: L1_01.007
+    400218: L1_01.008
+    400220: L1_01.009
+    400222: L1_01.010
+    400224: L1_01.011
+    400226: L1_01.012
+    400228: L2_wall_other.000
+    400230: L2_wall_other.001
+    400232: L3_02
+    400234: L3_04.001
+    400236: L3_bat
+    400238: L3_covr
+    400240: L3_ground
+    400242: L3_st
+    400244: L3_trees
+    400246: L3_wall
+    400248: L3_wall.001
+    400250: L3_wall.002
+    400252: L3_wall.003
+    400254: L3_wall.004
+    400256: L3_wall_gjal
+    400258: L3_wall_gjal.001
+    400260: L3_window
+    400262: Plazma
+    2300000: Cube.022
+    2300002: L2_01
+    2300004: L2_01.001
+    2300006: L2_01_glass
+    2300008: L2_02
+    2300010: L2_02.001
+    2300012: L2_02.002
+    2300014: L2_02.003
+    2300016: L2_02.004
+    2300018: L2_02.005
+    2300020: L2_02.006
+    2300022: L2_02.007
+    2300024: L2_03
+    2300026: L2_04
+    2300028: L2_05
+    2300030: L2_06
+    2300032: L2_06.001
+    2300034: L2_06.002
+    2300036: L2_06.003
+    2300038: L2_07
+    2300040: L2_07.001
+    2300042: L2_08
+    2300044: L2_08_glass
+    2300046: L2_09
+    2300048: L2_10
+    2300050: L2_wall
+    2300052: L2_wall_glass
+    2300054: pr2
+    2300056: pr2.001
+    2300058: pr2_glass
+    2300060: pr2_glass.001
+    2300062: pr5
+    2300064: pr_3.001
+    2300066: pr_4
+    2300068: pr_4.001
+    2300070: pr_4.002
+    2300072: pr_4_glass
+    2300074: pr_4_glass.001
+    2300076: L2_wall.001
+    2300078: L2_07.002
+    2300080: L2_wall.002
+    2300082: L2_wall.005
+    2300084: pr2_glass.002
+    2300086: ecran_
+    2300088: ecran_.001
+    2300090: ecran_.002
+    2300092: ecran_.003
+    2300094: ecran_.004
+    2300096: ecran_.005
+    2300098: ecran_.006
+    2300100: ecran_.007
+    2300102: ecran_.008
+    2300104: ecran_.009
+    2300106: ecran_.010
+    2300108: ecran_.011
+    2300110: L2_floor
+    2300112: L2_pr1
+    2300114: L2_wall_gjal
+    2300116: L2_wire
+    2300118: L1_04
+    2300120: L2_wall_other
+    2300122: L2_colb
+    2300124: L2_floor.001
+    2300126: pr2_glass.000
+    2300128: pr2_glass.003
+    2300130: pr2_glass.004
+    2300132: pr2_glass.005
+    2300134: pr5.001
+    2300136: pr5.002
+    2300138: pr5.003
+    2300140: pr_4.003
+    2300142: pr_4.004
+    2300144: pr_4.005
+    2300146: Text
+    2300148: ecran_2
+    2300150: L1_01.000
+    2300152: L1_01.001
+    2300154: L1_01.002
+    2300156: L1_01.003
+    2300158: L1_01.004
+    2300160: L1_01.005
+    2300162: L1_01.006
+    2300164: L1_01.007
+    2300166: L1_01.008
+    2300168: L1_01.009
+    2300170: L1_01.010
+    2300172: L1_01.011
+    2300174: L1_01.012
+    2300176: L2_wall_other.000
+    2300178: L2_wall_other.001
+    2300180: L3_02
+    2300182: L3_04.001
+    2300184: L3_bat
+    2300186: L3_covr
+    2300188: L3_ground
+    2300190: L3_st
+    2300192: L3_trees
+    2300194: L3_wall
+    2300196: L3_wall.001
+    2300198: L3_wall.002
+    2300200: L3_wall.003
+    2300202: L3_wall.004
+    2300204: L3_wall_gjal
+    2300206: L3_wall_gjal.001
+    2300208: L3_window
+    2300210: Plazma
+    3300000: Cube.022
+    3300002: L2_01
+    3300004: L2_01.001
+    3300006: L2_01_glass
+    3300008: L2_02
+    3300010: L2_02.001
+    3300012: L2_02.002
+    3300014: L2_02.003
+    3300016: L2_02.004
+    3300018: L2_02.005
+    3300020: L2_02.006
+    3300022: L2_02.007
+    3300024: L2_03
+    3300026: L2_04
+    3300028: L2_05
+    3300030: L2_06
+    3300032: L2_06.001
+    3300034: L2_06.002
+    3300036: L2_06.003
+    3300038: L2_07
+    3300040: L2_07.001
+    3300042: L2_08
+    3300044: L2_08_glass
+    3300046: L2_09
+    3300048: L2_10
+    3300050: L2_wall
+    3300052: L2_wall_glass
+    3300054: pr2
+    3300056: pr2.001
+    3300058: pr2_glass
+    3300060: pr2_glass.001
+    3300062: pr5
+    3300064: pr_3.001
+    3300066: pr_4
+    3300068: pr_4.001
+    3300070: pr_4.002
+    3300072: pr_4_glass
+    3300074: pr_4_glass.001
+    3300076: L2_wall.001
+    3300078: L2_07.002
+    3300080: L2_wall.002
+    3300082: L2_wall.005
+    3300084: pr2_glass.002
+    3300086: ecran_
+    3300088: ecran_.001
+    3300090: ecran_.002
+    3300092: ecran_.003
+    3300094: ecran_.004
+    3300096: ecran_.005
+    3300098: ecran_.006
+    3300100: ecran_.007
+    3300102: ecran_.008
+    3300104: ecran_.009
+    3300106: ecran_.010
+    3300108: ecran_.011
+    3300110: L2_floor
+    3300112: L2_pr1
+    3300114: L2_wall_gjal
+    3300116: L2_wire
+    3300118: L1_04
+    3300120: L2_wall_other
+    3300122: L2_colb
+    3300124: L2_floor.001
+    3300126: pr2_glass.000
+    3300128: pr2_glass.003
+    3300130: pr2_glass.004
+    3300132: pr2_glass.005
+    3300134: pr5.001
+    3300136: pr5.002
+    3300138: pr5.003
+    3300140: pr_4.003
+    3300142: pr_4.004
+    3300144: pr_4.005
+    3300146: Text
+    3300148: ecran_2
+    3300150: L1_01.000
+    3300152: L1_01.001
+    3300154: L1_01.002
+    3300156: L1_01.003
+    3300158: L1_01.004
+    3300160: L1_01.005
+    3300162: L1_01.006
+    3300164: L1_01.007
+    3300166: L1_01.008
+    3300168: L1_01.009
+    3300170: L1_01.010
+    3300172: L1_01.011
+    3300174: L1_01.012
+    3300176: L2_wall_other.000
+    3300178: L2_wall_other.001
+    3300180: L3_02
+    3300182: L3_04.001
+    3300184: L3_bat
+    3300186: L3_covr
+    3300188: L3_ground
+    3300190: L3_st
+    3300192: L3_trees
+    3300194: L3_wall
+    3300196: L3_wall.001
+    3300198: L3_wall.002
+    3300200: L3_wall.003
+    3300202: L3_wall.004
+    3300204: L3_wall_gjal
+    3300206: L3_wall_gjal.001
+    3300208: L3_window
+    3300210: Plazma
+    4300000: L2_01.001
+    4300002: L2_wall_glass
+    4300004: L2_07.001
+    4300006: L2_06.003
+    4300008: pr2.001
+    4300010: pr2_glass.001
+    4300012: L2_06.002
+    4300014: L2_06.001
+    4300016: L2_02.007
+    4300018: L2_04
+    4300020: pr_4.002
+    4300022: pr_4.001
+    4300024: pr_4_glass.001
+    4300026: L2_05
+    4300028: L2_wall
+    4300030: pr_4
+    4300032: pr_4_glass
+    4300034: Cube.022
+    4300036: pr2
+    4300038: pr2_glass
+    4300040: pr_3.001
+    4300042: pr5
+    4300044: L2_01
+    4300046: L2_01_glass
+    4300048: L2_03
+    4300050: L2_09
+    4300052: L2_08
+    4300054: L2_08_glass
+    4300056: L2_06
+    4300058: L2_07
+    4300060: L2_10
+    4300062: L2_wall.001
+    4300064: L2_wall.002
+    4300066: L2_07.002
+    4300068: pr2_glass.002
+    4300070: L2_wall.005
+    4300072: L2_wire
+    4300074: L2_floor
+    4300076: L2_wall_gjal
+    4300078: L2_02
+    4300080: ecran_.011
+    4300082: ecran_.010
+    4300084: ecran_.009
+    4300086: ecran_.008
+    4300088: ecran_.007
+    4300090: ecran_.006
+    4300092: ecran_.005
+    4300094: ecran_.004
+    4300096: ecran_.003
+    4300098: ecran_.002
+    4300100: ecran_.001
+    4300102: ecran_
+    4300104: L2_pr1
+    4300106: L1_04
+    4300108: L2_wall_other
+    4300110: L2_colb
+    4300112: L2_floor.001
+    4300114: pr_4.005
+    4300116: pr5.004
+    4300118: pr5.003
+    4300120: pr5.002
+    4300122: Text
+    4300124: pr5.001
+    4300126: pr_4.004
+    4300128: pr_4.003
+    4300130: pr2_glass.005
+    4300132: pr2_glass.004
+    4300134: pr2_glass.003
+    4300136: pr2_glass.000
+    4300138: L3_trees
+    4300140: L3_wall.004
+    4300142: L1_01.012
+    4300144: L1_01.007
+    4300146: L1_01.006
+    4300148: L1_01.004
+    4300150: L3_04.001
+    4300152: L3_wall.003
+    4300154: L3_wall.002
+    4300156: L3_wall.001
+    4300158: L3_wall_gjal.001
+    4300160: L2_wall_other.000
+    4300162: L1_01.011
+    4300164: L1_01.010
+    4300166: L1_01.009
+    4300168: L1_01.008
+    4300170: L1_01.005
+    4300172: L1_01.003
+    4300174: L1_01.002
+    4300176: L1_01.000
+    4300178: Plazma
+    4300180: L3_st
+    4300182: L3_bat
+    4300184: L3_ground
+    4300186: L3_wall
+    4300188: L3_02
+    4300190: L3_window
+    4300192: ecran_2
+    4300194: L3_covr
+    4300196: L1_01.001
+    4300198: L2_wall_other.001
+    4300200: L3_wall_gjal
+    6400000: ecran_
+    6400002: ecran_.001
+    6400004: ecran_.002
+    6400006: ecran_.003
+    6400008: ecran_.004
+    6400010: ecran_.005
+    6400012: ecran_.006
+    6400014: ecran_.007
+    6400016: ecran_.008
+    6400018: ecran_.009
+    6400020: ecran_.010
+    6400022: ecran_.011
+    6400024: L1_04
+    6400026: L2_01
+    6400028: L2_01.001
+    6400030: L2_01_glass
+    6400032: L2_02
+    6400034: L2_03
+    6400036: L2_04
+    6400038: L2_05
+    6400040: L2_06
+    6400042: L2_07
+    6400044: L2_08
+    6400046: L2_08_glass
+    6400048: L2_09
+    6400050: L2_10
+    6400052: L2_colb
+    6400054: L2_floor
+    6400056: L2_floor.001
+    6400058: L2_pr1
+    6400060: L2_wall
+    6400062: L2_wall.001
+    6400064: L2_wall_gjal
+    6400066: L2_wall_glass
+    6400068: L2_wall_other
+    6400070: L2_wire
+    6400072: pr5
+    6400074: pr5.001
+    6400076: pr5.002
+    6400078: pr5.003
+    6400080: pr_3.001
+    6400082: pr_4
+    6400084: pr_4.001
+    6400086: pr_4.002
+    6400088: pr_4.003
+    6400090: pr_4.004
+    6400092: pr_4.005
+    6400094: pr_4_glass
+    6400096: pr_4_glass.001
+    6400098: Text
+    7400000: Armature_pr2|Armature_pr2
+    7400002: Armature_pr4|Arrow
+    7400004: Armature_pr2|pr2
+    7400006: Armature_pr2|pr2_2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: pr5.004
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature_pr2|pr2
+      takeName: Armature_pr2|pr2
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_pr2
+        weight: 1
+      - path: Armature_pr2/Armature_pr2|Bone
+        weight: 1
+      - path: Armature_pr2.001
+        weight: 1
+      - path: Armature_pr2.001/Armature_pr2.001|Bone
+        weight: 1
+      - path: Armature_pr4
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.001
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.002
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.003
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.004
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.005
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.006
+        weight: 1
+      - path: ecran_
+        weight: 1
+      - path: ecran_.001
+        weight: 1
+      - path: ecran_.002
+        weight: 1
+      - path: ecran_.003
+        weight: 1
+      - path: ecran_.004
+        weight: 1
+      - path: ecran_.005
+        weight: 1
+      - path: ecran_.006
+        weight: 1
+      - path: ecran_.007
+        weight: 1
+      - path: ecran_.008
+        weight: 1
+      - path: ecran_.009
+        weight: 1
+      - path: ecran_.010
+        weight: 1
+      - path: ecran_.011
+        weight: 1
+      - path: L1_04
+        weight: 1
+      - path: L2_01
+        weight: 1
+      - path: L2_01.001
+        weight: 1
+      - path: L2_01_glass
+        weight: 1
+      - path: L2_02
+        weight: 1
+      - path: L2_03
+        weight: 1
+      - path: L2_04
+        weight: 1
+      - path: L2_05
+        weight: 1
+      - path: L2_06
+        weight: 1
+      - path: L2_07
+        weight: 1
+      - path: L2_08
+        weight: 1
+      - path: L2_08/L2_08_glass
+        weight: 1
+      - path: L2_09
+        weight: 1
+      - path: L2_10
+        weight: 1
+      - path: L2_colb
+        weight: 1
+      - path: L2_floor
+        weight: 1
+      - path: L2_floor.001
+        weight: 1
+      - path: L2_pr1
+        weight: 1
+      - path: L2_wall
+        weight: 1
+      - path: L2_wall/L2_wall_other
+        weight: 1
+      - path: L2_wall.001
+        weight: 1
+      - path: L2_wall_gjal
+        weight: 1
+      - path: L2_wall_glass
+        weight: 1
+      - path: L2_wire
+        weight: 1
+      - path: pr2
+        weight: 1
+      - path: pr2.001
+        weight: 1
+      - path: pr2_glass.000
+        weight: 1
+      - path: pr2_glass.001
+        weight: 1
+      - path: pr2_glass.002
+        weight: 1
+      - path: pr2_glass.003
+        weight: 1
+      - path: pr2_glass.004
+        weight: 1
+      - path: pr2_glass.005
+        weight: 1
+      - path: pr5
+        weight: 1
+      - path: pr5.001
+        weight: 1
+      - path: pr5.002
+        weight: 1
+      - path: pr5.003
+        weight: 1
+      - path: pr5.004
+        weight: 1
+      - path: pr_3.001
+        weight: 1
+      - path: pr_4
+        weight: 1
+      - path: pr_4/pr_4_glass
+        weight: 1
+      - path: pr_4.001
+        weight: 1
+      - path: pr_4.001/pr_4_glass.001
+        weight: 1
+      - path: pr_4.002
+        weight: 1
+      - path: pr_4.003
+        weight: 1
+      - path: pr_4.004
+        weight: 1
+      - path: pr_4.005
+        weight: 1
+      - path: Text
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature_pr2|pr2_2
+      takeName: Armature_pr2|pr2_2
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_pr2
+        weight: 1
+      - path: Armature_pr2/Armature_pr2|Bone
+        weight: 1
+      - path: Armature_pr2.001
+        weight: 1
+      - path: Armature_pr2.001/Armature_pr2.001|Bone
+        weight: 1
+      - path: Armature_pr4
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.001
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.002
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.003
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.004
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.005
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.006
+        weight: 1
+      - path: ecran_
+        weight: 1
+      - path: ecran_.001
+        weight: 1
+      - path: ecran_.002
+        weight: 1
+      - path: ecran_.003
+        weight: 1
+      - path: ecran_.004
+        weight: 1
+      - path: ecran_.005
+        weight: 1
+      - path: ecran_.006
+        weight: 1
+      - path: ecran_.007
+        weight: 1
+      - path: ecran_.008
+        weight: 1
+      - path: ecran_.009
+        weight: 1
+      - path: ecran_.010
+        weight: 1
+      - path: ecran_.011
+        weight: 1
+      - path: L1_04
+        weight: 1
+      - path: L2_01
+        weight: 1
+      - path: L2_01.001
+        weight: 1
+      - path: L2_01_glass
+        weight: 1
+      - path: L2_02
+        weight: 1
+      - path: L2_03
+        weight: 1
+      - path: L2_04
+        weight: 1
+      - path: L2_05
+        weight: 1
+      - path: L2_06
+        weight: 1
+      - path: L2_07
+        weight: 1
+      - path: L2_08
+        weight: 1
+      - path: L2_08/L2_08_glass
+        weight: 1
+      - path: L2_09
+        weight: 1
+      - path: L2_10
+        weight: 1
+      - path: L2_colb
+        weight: 1
+      - path: L2_floor
+        weight: 1
+      - path: L2_floor.001
+        weight: 1
+      - path: L2_pr1
+        weight: 1
+      - path: L2_wall
+        weight: 1
+      - path: L2_wall/L2_wall_other
+        weight: 1
+      - path: L2_wall.001
+        weight: 1
+      - path: L2_wall_gjal
+        weight: 1
+      - path: L2_wall_glass
+        weight: 1
+      - path: L2_wire
+        weight: 1
+      - path: pr2
+        weight: 1
+      - path: pr2.001
+        weight: 1
+      - path: pr2_glass.000
+        weight: 1
+      - path: pr2_glass.001
+        weight: 1
+      - path: pr2_glass.002
+        weight: 1
+      - path: pr2_glass.003
+        weight: 1
+      - path: pr2_glass.004
+        weight: 1
+      - path: pr2_glass.005
+        weight: 1
+      - path: pr5
+        weight: 1
+      - path: pr5.001
+        weight: 1
+      - path: pr5.002
+        weight: 1
+      - path: pr5.003
+        weight: 1
+      - path: pr5.004
+        weight: 1
+      - path: pr_3.001
+        weight: 1
+      - path: pr_4
+        weight: 1
+      - path: pr_4/pr_4_glass
+        weight: 1
+      - path: pr_4.001
+        weight: 1
+      - path: pr_4.001/pr_4_glass.001
+        weight: 1
+      - path: pr_4.002
+        weight: 1
+      - path: pr_4.003
+        weight: 1
+      - path: pr_4.004
+        weight: 1
+      - path: pr_4.005
+        weight: 1
+      - path: Text
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature_pr4|Arrow
+      takeName: Armature_pr4|Arrow
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_pr2
+        weight: 1
+      - path: Armature_pr2/Armature_pr2|Bone
+        weight: 1
+      - path: Armature_pr2.001
+        weight: 1
+      - path: Armature_pr2.001/Armature_pr2.001|Bone
+        weight: 1
+      - path: Armature_pr4
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.001
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.002
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.003
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.004
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.005
+        weight: 1
+      - path: Armature_pr4/Armature_pr4|Bone/Armature_pr4|Bone.006
+        weight: 1
+      - path: ecran_
+        weight: 1
+      - path: ecran_.001
+        weight: 1
+      - path: ecran_.002
+        weight: 1
+      - path: ecran_.003
+        weight: 1
+      - path: ecran_.004
+        weight: 1
+      - path: ecran_.005
+        weight: 1
+      - path: ecran_.006
+        weight: 1
+      - path: ecran_.007
+        weight: 1
+      - path: ecran_.008
+        weight: 1
+      - path: ecran_.009
+        weight: 1
+      - path: ecran_.010
+        weight: 1
+      - path: ecran_.011
+        weight: 1
+      - path: L1_04
+        weight: 1
+      - path: L2_01
+        weight: 1
+      - path: L2_01.001
+        weight: 1
+      - path: L2_01_glass
+        weight: 1
+      - path: L2_02
+        weight: 1
+      - path: L2_03
+        weight: 1
+      - path: L2_04
+        weight: 1
+      - path: L2_05
+        weight: 1
+      - path: L2_06
+        weight: 1
+      - path: L2_07
+        weight: 1
+      - path: L2_08
+        weight: 1
+      - path: L2_08/L2_08_glass
+        weight: 1
+      - path: L2_09
+        weight: 1
+      - path: L2_10
+        weight: 1
+      - path: L2_colb
+        weight: 1
+      - path: L2_floor
+        weight: 1
+      - path: L2_floor.001
+        weight: 1
+      - path: L2_pr1
+        weight: 1
+      - path: L2_wall
+        weight: 1
+      - path: L2_wall/L2_wall_other
+        weight: 1
+      - path: L2_wall.001
+        weight: 1
+      - path: L2_wall_gjal
+        weight: 1
+      - path: L2_wall_glass
+        weight: 1
+      - path: L2_wire
+        weight: 1
+      - path: pr2
+        weight: 1
+      - path: pr2.001
+        weight: 1
+      - path: pr2_glass.000
+        weight: 1
+      - path: pr2_glass.001
+        weight: 1
+      - path: pr2_glass.002
+        weight: 1
+      - path: pr2_glass.003
+        weight: 1
+      - path: pr2_glass.004
+        weight: 1
+      - path: pr2_glass.005
+        weight: 1
+      - path: pr5
+        weight: 1
+      - path: pr5.001
+        weight: 1
+      - path: pr5.002
+        weight: 1
+      - path: pr5.003
+        weight: 1
+      - path: pr5.004
+        weight: 1
+      - path: pr_3.001
+        weight: 1
+      - path: pr_4
+        weight: 1
+      - path: pr_4/pr_4_glass
+        weight: 1
+      - path: pr_4.001
+        weight: 1
+      - path: pr_4.001/pr_4_glass.001
+        weight: 1
+      - path: pr_4.002
+        weight: 1
+      - path: pr_4.003
+        weight: 1
+      - path: pr_4.004
+        weight: 1
+      - path: pr_4.005
+        weight: 1
+      - path: Text
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
