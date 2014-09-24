@@ -8,12 +8,14 @@ public class ButtonMenuLoader : MonoBehaviour
 		private Transform _myBGSpriteTR;
 		private SpriteRenderer _myBGSprite;
 		private bool _isHovered = false;
+		private Color _originalColor;
 
 		// Use this for initialization
 		void Start ()
 		{
 				_myBGSpriteTR = transform.Find ("buttons_bg");
 				_myBGSprite = _myBGSpriteTR.GetComponent<SpriteRenderer> ();
+				_originalColor = _myBGSprite.color;
 		}
 	
 		// Update is called once per frame
@@ -41,7 +43,7 @@ public class ButtonMenuLoader : MonoBehaviour
 
 		void OnMouseUp ()
 		{
-				_myBGSprite.color = Color.white;
+				_myBGSprite.color = _originalColor;
 		
 				if (_isHovered) {
 						Application.LoadLevel (levelToLoad);
