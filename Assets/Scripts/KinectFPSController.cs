@@ -8,21 +8,33 @@ public class KinectFPSController : MonoBehaviour
 		public int player;
 		public Transform cameraToMove;
 		public float speed = 7f;
-		public float rotSpeed = 0.25f;
+		public float maxRotSpeed = 0.25f;
 		public float deadZoneAngles = 15f;
+		public float maxRotationAngles = 30f;
+		public float armMovingSensibleAngle = 15f;
 		public float armLengthDeadZone = 0.15f;
 		public float maxArmLength = 0.4f;
+		public float maxHeadAngle = 30f;
+		public float headTurnMultiplier = 2f;
 		private Vector3 rightArmVector;
+		private Vector3 shouldersVector;
+		private Vector3 headVector;
 
 		/// <summary>
-		/// Couroutine that polls sensor for bones position every <paramref name="sensorPollTime"/> seconds. 
-		/// Also sets rotation of right arm.
+		/// Couroutine that polls sensor for bones position every <paramref name="sensorPollTime"/> seconds.
 		/// </summary>
 		/// <returns>The poll couroutine.</returns>
 		IEnumerator SensorPollCouroutine ()
 		{
 				while (Application.isPlaying) {
-						rightArmVector = PollSensorForVector (8, 11);
+						if (sw.pollSkeleton ()) {
+								// vector from left shoulder, to right
+								shouldersVector = sw.bonePos [player, 8] - sw.bonePos [player, 4];
+								// vector from right shoulder, to hand
+								rightArmVector = sw.bonePos [player, 11] - sw.bonePos [player, 8];
+								// vector from shoulder center, to head
+								headVector = sw.bonePos [player, 3] - sw.bonePos [player, 2];
+						}
 
 						yield return new WaitForSeconds (sensorPollTime);
 				}
@@ -39,50 +51,53 @@ public class KinectFPSController : MonoBehaviour
 		// Update is called once per frame
 		void FixedUpdate ()
 		{
-				float rotationFactor = 0f;
+				// if we've got shoulders position from sensor..
+				if (shouldersVector != Vector3.zero) {
+						// variable for turning angle
+						float turningFactor = 0f;
 
-				Quaternion rightArmRotation;
-
-				// Set rotation of arm
-				if (rightArmVector.sqrMagnitude < 0.05f) {
-						rightArmRotation = Quaternion.Euler (0f, 180f, 0f);
-				} else {
-						// Rotation from right shoulder to right hand.
-						rightArmRotation = Quaternion.FromToRotation (-Vector3.forward, rightArmVector);
-				}
-
-				// Set horizontal rotation. Turn the character!
-				if (Mathf.Abs (rightArmRotation.eulerAngles.y - 180f) > deadZoneAngles) {
-						rotationFactor = (rightArmRotation.eulerAngles.y - 180f);
-				}
-
-				// Set physical rotation
-				rigidbody.angularVelocity = Vector3.Lerp (rigidbody.angularVelocity, new Vector3 (0f, rotationFactor * rotSpeed, 0f), 10f * Time.fixedDeltaTime);
-
-				float fixedCamAngle = 20f;
-				// Rotate camera
-				float cameraRotFactor = rightArmRotation.eulerAngles.x;
+						// we don't need horizontal component of angle between shoulders 
+						shouldersVector.y = 0f;
+						// calculating angle between shoulders. It is clamped for variable turning speed
+						float shouldersAngle = Mathf.Clamp (Vector3.Angle (shouldersVector, Vector3.right), 0f, maxRotationAngles);
 				
-				if (cameraRotFactor != 0) {
-
-						if (cameraRotFactor > fixedCamAngle && cameraRotFactor < 180f) {
-								cameraRotFactor = fixedCamAngle;
-						} else if (cameraRotFactor > 180f && cameraRotFactor < 360f - fixedCamAngle) {
-								cameraRotFactor = 360f - fixedCamAngle;
+						if (shouldersAngle > deadZoneAngles) {
+								// set direction
+								turningFactor = shouldersAngle * ((shouldersVector.z < 0f) ? 1f : -1f);
+								// set speed of turning
+								turningFactor = maxRotSpeed * turningFactor / maxRotationAngles;
 						}
-						cameraToMove.localRotation = Quaternion.Lerp (cameraToMove.localRotation, Quaternion.Euler (-cameraRotFactor, 0f, 0f), Time.fixedDeltaTime);
+
+						rigidbody.angularVelocity = new Vector3 (0f, turningFactor, 0f);
 				}
 
-				float speedModifier = 0f;
-
-				// Set speed multiplier based on arm length.
-				if (rightArmVector.sqrMagnitude > armLengthDeadZone * armLengthDeadZone) {
-						speedModifier = rightArmVector.sqrMagnitude / (maxArmLength * maxArmLength);
+		
+				// if we've got right arm position from sensor..
+				if (rightArmVector != Vector3.zero) {
+						// only if hand extended and looking forward..
+						if (rightArmVector.sqrMagnitude > armLengthDeadZone * armLengthDeadZone &&
+								Vector3.Angle (rightArmVector, Vector3.forward) < armMovingSensibleAngle) {
+								// ..move us forward
+								rigidbody.velocity = transform.forward * speed;
+						} else {
+								rigidbody.velocity = Vector3.zero;
+						}
 				}
-				rigidbody.velocity = transform.forward * speed * speedModifier;
 
+		
+				if (headVector != Vector3.zero) {
+						float cameraRotFactor;
 
-				Debug.Log (rightArmRotation.eulerAngles.x + "; " + cameraRotFactor);
+						if (headVector.z >= 0) {
+								headVector.x = 0f;
+								cameraRotFactor = Vector3.Angle (headVector, Vector3.up) * headTurnMultiplier;
+								cameraRotFactor = Mathf.Clamp (cameraRotFactor, 0f, maxHeadAngle);
+						} else {
+								cameraRotFactor = 0f;
+						}
+
+						cameraToMove.localRotation = Quaternion.Lerp (cameraToMove.localRotation, Quaternion.Euler (cameraRotFactor, 0f, 0f), Time.fixedDeltaTime);
+				}
 		}
 
 		/// <summary>
